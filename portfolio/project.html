@@ -37,45 +37,150 @@
             <div class="container">
                 <p class="section__label reveal">Projects</p>
                 <h1 class="section__title reveal">Selected work</h1>
-                <p class="section__lead reveal">Each card is a template: swap in your repo links, demos, and one-line outcomes. Lead with the problem, then what you built.</p>
+                <p class="section__lead reveal">Here are some of the projects I've worked on.</p>
 
-                <div class="card-grid reveal-stagger">
-                    <article class="card project-card">
-                        <div class="card__icon" aria-hidden="true">&#9670;</div>
-                        <h2 class="card__title">Project name</h2>
-                        <p class="card__text">One or two sentences: user need, your approach, and result (latency, accuracy, users, etc.).</p>
-                        <div class="tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">API</span>
+                <div class="project-filters reveal" role="toolbar" aria-label="Filter projects by category">
+                    <button type="button" class="project-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="project-filter" data-filter="web" aria-pressed="false">Web Dev</button>
+                    <button type="button" class="project-filter" data-filter="cyber" aria-pressed="false">Cybersecurity</button>
+                    <button type="button" class="project-filter" data-filter="ai-ml" aria-pressed="false">AI / ML</button>
+                    <button type="button" class="project-filter" data-filter="research" aria-pressed="false">Research</button>
+                    <button type="button" class="project-filter" data-filter="fintech" aria-pressed="false">FinTech</button>
+                    <button type="button" class="project-filter" data-filter="other" aria-pressed="false">Other</button>
+                </div>
+
+                <p id="project-empty" class="project-empty" role="status" hidden>No projects in this category yet — add a card with a matching <code>data-category</code>.</p>
+
+                <div id="project-grid" class="card-grid reveal-stagger">
+                    <article class="card project-card" data-category="web">
+                        <div class="project-card__media">
+                            <img src="../images/projects/portfolio.jpg" alt="Screenshot preview of the personal portfolio website" width="800" height="450" loading="lazy" decoding="async">
                         </div>
-                        <p style="margin-top: 1rem; margin-bottom: 0;">
-                            <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
-                            &nbsp;·&nbsp;
-                            <a class="card__link" href="#">Live demo</a>
-                        </p>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Personal portfolio site</h2>
+                            <p class="card__text">Responsive multi-page portfolio with a cohesive black-and-gold theme, category filters, and accessible navigation. Replace this blurb with stack and outcomes.</p>
+                            <div class="tags">
+                                <span class="tag">HTML / CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                                &nbsp;·&nbsp;
+                                <a class="card__link" href="index.html">Live</a>
+                            </p>
+                        </div>
                     </article>
-                    <article class="card project-card">
-                        <div class="card__icon" aria-hidden="true">◇</div>
-                        <h2 class="card__title">Second project</h2>
-                        <p class="card__text">Highlight collaboration, testing, or security considerations if relevant to the role you want.</p>
-                        <div class="tags">
-                            <span class="tag">Web</span>
-                            <span class="tag">ML</span>
+                    <article class="card project-card" data-category="web">
+                        <div class="project-card__media">
+                            <img src="../images/projects/webapp.jpg" alt="Screenshot preview of the full-stack web application" width="800" height="450" loading="lazy" decoding="async">
                         </div>
-                        <p style="margin-top: 1rem; margin-bottom: 0;">
-                            <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
-                        </p>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Full-stack web app (template)</h2>
+                            <p class="card__text">Describe your REST or full-stack project: auth, database, deployment. Swap links when the repo or demo is public.</p>
+                            <div class="tags">
+                                <span class="tag">API</span>
+                                <span class="tag">React or Flask</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            </p>
+                        </div>
                     </article>
-                    <article class="card project-card">
-                        <div class="card__icon" aria-hidden="true">◎</div>
-                        <h2 class="card__title">Course or hackathon build</h2>
-                        <p class="card__text">Short timeframe projects still matter — note constraints (time, team size) and what you'd improve next.</p>
-                        <div class="tags">
-                            <span class="tag">Team of 4</span>
+                    <article class="card project-card" data-category="cyber">
+                        <div class="project-card__media">
+                            <img src="../images/projects/cyber.jpg" alt="Screenshot or diagram related to the security lab project" width="800" height="450" loading="lazy" decoding="async">
                         </div>
-                        <p style="margin-top: 1rem; margin-bottom: 0;">
-                            <a class="card__link" href="#">Details</a>
-                        </p>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Security lab / CTF notes</h2>
+                            <p class="card__text">Summarize a security project: tooling used, vulnerabilities studied, or blue-team automation — keep details ethical and high-level if sensitive.</p>
+                            <div class="tags">
+                                <span class="tag">Networking</span>
+                                <span class="tag">Linux</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="ai-ml">
+                        <div class="project-card__media">
+                            <img src="../images/projects/ml.jpg" alt="Screenshot of the machine learning project or evaluation output" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">ML classifier or NLP mini-project</h2>
+                            <p class="card__text">Dataset, model choice, metrics (accuracy, F1), and what you’d try next. Link notebooks or a small demo if available.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">scikit-learn / PyTorch</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="research">
+                        <div class="project-card__media">
+                            <img src="../images/projects/research.jpg" alt="Photo or slide preview of the undergraduate research project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Undergraduate research project</h2>
+                            <p class="card__text">Advisor, question you studied, methods, and a link to a poster or paper if allowed. Clarify your individual contribution in team settings.</p>
+                            <div class="tags">
+                                <span class="tag">Literature review</span>
+                                <span class="tag">Experiments</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="#">Poster / PDF</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="fintech">
+                        <div class="project-card__media">
+                            <img src="../images/projects/fintech.jpg" alt="Screenshot of the FinTech dashboard or analytics view" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">FinTech dashboard or market tool</h2>
+                            <p class="card__text">Data sources, risk or compliance considerations, and how you validated numbers. Good fit for analytics + API integration stories.</p>
+                            <div class="tags">
+                                <span class="tag">Data viz</span>
+                                <span class="tag">APIs</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="other">
+                        <div class="project-card__media">
+                            <img src="../images/projects/hackathon.jpg" alt="Photo or screenshot from the hackathon or capstone project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Hackathon or course capstone</h2>
+                            <p class="card__text">Short timeframe, team size, and what shipped vs. what you’d refactor. Great for showing scope and prioritization.</p>
+                            <div class="tags">
+                                <span class="tag">Team</span>
+                                <span class="tag">48h build</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="#">Details</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="ai-ml cyber">
+                        <div class="project-card__media">
+                            <img src="../images/projects/cross-topic.jpg" alt="Screenshot preview for the AI and cybersecurity cross-topic project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Cross-topic example (AI + Cyber)</h2>
+                            <p class="card__text">This card uses <strong>two</strong> categories in <code>data-category</code> so it appears under both <strong>AI / ML</strong> and <strong>Cybersecurity</strong>. Replace with a real project.</p>
+                            <div class="tags">
+                                <span class="tag">Anomaly detection</span>
+                                <span class="tag">Threat data</span>
+                            </div>
+                            <p style="margin-top: 1rem; margin-bottom: 0;">
+                                <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            </p>
+                        </div>
                     </article>
                 </div>
             </div>
