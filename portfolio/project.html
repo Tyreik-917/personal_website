@@ -2,299 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyreik Portfolio - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projects by Tyreik Rogers — software, ML, and security work.">
+    <title>Projects · Tyreik Rogers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
-    <div id="particles">
-        <div class="overlay"></div>
-    </div>
-    <div class="cursor"></div>
-    <header class="header">
-        <input type="checkbox" id="menu-check" />
-        <label for="menu-check" class="icons">
-            <img src="../image/menu-open.svg" id="menu-icon" alt="Menu" />
-            <img src="../image/menu-close.svg" id="close-icon" alt="Close" />
-        </label>
-        <nav class="menu">
-            <a href="main.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html" class="clicked">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+<body class="page">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true"></span> Tyreik Rogers</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html" aria-current="page">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="conferences.html">Conferences</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="projects-page">
+        <section class="section section--tight">
             <div class="container">
-                <div class="title">
-                    <div class="top-part">
-                        <h1>PROJECTS</h1>
-                        <p>A Collection Of My Recent Works</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="prev-button">🡠</a>
-                        <p>Navigate</p>
-                        <a class="next-button">🡢</a>
-                    </div>
-                </div>
-                <div class="highlight animate-slide-up">
-                    <div class="image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="details">
-                        <div class="main-details">
-                            <p class="name"></p>
-                            <p class="sub-details"></p>
+                <p class="section__label reveal">Projects</p>
+                <h1 class="section__title reveal">Selected work</h1>
+                <p class="section__lead reveal">Each card is a template: swap in your repo links, demos, and one-line outcomes. Lead with the problem, then what you built.</p>
+
+                <div class="card-grid reveal-stagger">
+                    <article class="card project-card">
+                        <div class="card__icon" aria-hidden="true">&#9670;</div>
+                        <h2 class="card__title">Project name</h2>
+                        <p class="card__text">One or two sentences: user need, your approach, and result (latency, accuracy, users, etc.).</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">API</span>
                         </div>
-                        <p class="description"></p>
-                        <div class="links">
-                            <a class="visit-page" href="" target="_blank">Visit Page</a>
-                            <a class="github-link" href="" target="_blank">Github</a>
+                        <p style="margin-top: 1rem; margin-bottom: 0;">
+                            <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                            &nbsp;·&nbsp;
+                            <a class="card__link" href="#">Live demo</a>
+                        </p>
+                    </article>
+                    <article class="card project-card">
+                        <div class="card__icon" aria-hidden="true">◇</div>
+                        <h2 class="card__title">Second project</h2>
+                        <p class="card__text">Highlight collaboration, testing, or security considerations if relevant to the role you want.</p>
+                        <div class="tags">
+                            <span class="tag">Web</span>
+                            <span class="tag">ML</span>
                         </div>
-                    </div>
+                        <p style="margin-top: 1rem; margin-bottom: 0;">
+                            <a class="card__link" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </article>
+                    <article class="card project-card">
+                        <div class="card__icon" aria-hidden="true">◎</div>
+                        <h2 class="card__title">Course or hackathon build</h2>
+                        <p class="card__text">Short timeframe projects still matter — note constraints (time, team size) and what you'd improve next.</p>
+                        <div class="tags">
+                            <span class="tag">Team of 4</span>
+                        </div>
+                        <p style="margin-top: 1rem; margin-bottom: 0;">
+                            <a class="card__link" href="#">Details</a>
+                        </p>
+                    </article>
                 </div>
-                <div class="other-projects">
-                    <p class="label">Other Projects</p>
-                    <div class="filters">
-                        <p class="filter-all selected" data-filter="all">All</p>
-                        <p class="filter-website" data-filter="website">Website</p>
-                        <p class="filter-software" data-filter="software">Software</p>
-                        <p class="filter-design" data-filter="design">Design</p>
-                        <p class="filter-other" data-filter="other">Other</p>
-                    </div>
-                </div>
-                <div class="projects-wrapper"></div>
-            </div>
-            <div class="page-number">
-                <p class="label">Page</p>
-                <p class="page">03</p>
             </div>
         </section>
     </main>
-    <script>
-        $(document).ready(function () {
-            var projects = [];
-            var currentIndex = 0;
 
-            // Local data for projects
-            var projectData = [
-                {
-                    id: 1,
-                    image_url: "../image/tcw_trailer.gif",
-                    name: "The Cities Within",
-                    sub_details: "An action role playing demo game",
-                    description: "Embark on an epic journey in this pixel art role-playing action game. Explore a vast world teeming with quests, NPCs, and fearsome monsters. Adapt to the dynamic day and night cycle as you hone your skills and collect powerful gear. Unleash your abilities in strategic battles and uncover the secrets about the city.",
-                    page_link: "https://ninjhagames.itch.io/the-cities-within",
-                    github_link: "",
-                    tags: "all,other"
-                },
-                {
-                    id: 2,
-                    image_url: "../image/tfow-project.gif",
-                    name: "TFOW Website",
-                    sub_details: "A website for the organization of TFOW",
-                    description: "The Fraternal Order of Wolf's mission is to foster the formation of leaders who can take action in their local communities. They aspire to offer positive social experiences that motivate individuals to make a meaningful impact in the world by focusing on personal character development through leadership, scholarship, and community service.",
-                    page_link: "https://www.tfow.ph/",
-                    github_link: "",
-                    tags: "all,website,design"
-                },
-                {
-                    id: 3,
-                    image_url: "../image/campusb-project.gif",
-                    name: "Campus Boarders UI",
-                    sub_details: "A UI for the Campus Boarders App",
-                    description: "The Campus Housing App is the most comprehensive platform for students, professional educators, and property owners to find and list ideal housing. It provides innovative features that make the housing search process easier for all groups involved.",
-                    page_link: "https://www.figma.com/proto/5iXyd2AgZN8CXbPsqKEUXO/App-UI-DRAFT?type=design&node-id=34-174&t=EzFayHYaDLowHHz3-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=638%3A3644&mode=design",
-                    github_link: "",
-                    tags: "all,design"
-                },
-                {
-                    id: 4,
-                    image_url: "../image/electriguide.gif",
-                    name: "ElectriGuide",
-                    sub_details: "Electricity Tracking Software",
-                    description: "ElectriGuide is a software that helps users monitor their household electric consumption in real-time. ElectriGuide's main goal is to promote electrical conservation by giving users the tools and knowledge they need to manage their energy usage more efficiently, ultimately reducing their environmental impact and saving on electricity costs.",
-                    page_link: "#",
-                    github_link: "#",
-                    tags: "all,software"
-                },
-                {
-                    id: 5,
-                    image_url: "../image/proverbs_app.gif",
-                    name: "Proverbs App",
-                    sub_details: "Your Personal Proverbs Companion",
-                    description: "Proverbs Application is an app designed to provide an immersive experience with biblical proverbs. Tailored specifically for proverbs, it allows users to filter, search, save, and locate specific chapters or verses with ease. With Proverbs Application, exploring the wisdom of proverbs has never been more accessible or enjoyable.",
-                    page_link: "#",
-                    github_link: "#",
-                    tags: "all,software"
-                },
-                {
-                    id: 6,
-                    image_url: "../image/queueing_sim.gif",
-                    name: "Queuing Simulation",
-                    sub_details: "Animated Java Queue Visualizer",
-                    description: "Queuing Simulation is an educational software that visually demonstrates how queues work in Java programming. This engaging visual format helps users understand the mechanics of queues in a fun and intuitive way, making it an excellent tool for both learning and teaching Java queue concepts.",
-                    page_link: "#",
-                    github_link: "#",
-                    tags: "all,other"
-                }
-            ];
-
-            // Function to fetch projects based on filter (using local data)
-            function fetchProjects(filter) {
-                // Simulate AJAX call by filtering local data
-                projects = projectData.filter(project => project.tags.includes(filter));
-                renderProjectCards();
-                renderProject(currentIndex);
-
-                // Set animation delay after projects are fetched
-                setAnimationDelay();
-            }
-
-            // Function to render project details
-            function renderProject(index) {
-                if (projects.length === 0) {
-                    console.log("No projects to render.");
-                    return;
-                }
-
-                var project = projects[index];
-                if (!project) {
-                    console.log("Project at index", index, "is undefined.");
-                    return;
-                }
-
-                $(".highlight .image img").attr("src", project.image_url || '');
-                $(".highlight .details .name").text(project.name || '');
-                $(".highlight .details .sub-details").text(project.sub_details || '');
-                $(".highlight .details .description").text(project.description || '');
-                $(".highlight .details .visit-page").attr("href", project.page_link || '');
-                $(".highlight .details .github-link").attr("href", project.github_link || '');
-
-                // Highlight the current project card
-                $(".project-card").removeClass("highlighted selected");
-                $(".project-card").eq(index).addClass("highlighted selected");
-
-                // Scroll to the top of the page
-                $("html, body").scrollTop(0);
-            }
-
-            // Function to render project cards
-            function renderProjectCards() {
-                var projectsWrapper = $(".projects-wrapper");
-                projectsWrapper.empty();
-
-                if (projects.length === 0) {
-                    console.log("No projects to render.");
-                    return;
-                }
-
-                projects.forEach(function (project, i) {
-                    var projectCard = $("<div>").addClass("project-card");
-                    var image = $("<img>").attr("src", project.image_url || '').attr("alt", project.name || '');
-                    var details = $("<div>").addClass("details");
-                    var name = $("<p>").addClass("name").text(project.name || '');
-                    var subDetails = $("<p>").addClass("sub-details").text(project.sub_details || '');
-
-                    // Append image and details to project card
-                    projectCard.append(image, details);
-                    details.append(name, subDetails);
-
-                    // Append project card to projects wrapper
-                    projectsWrapper.append(projectCard);
-
-                    // Add click event listener to project cards
-                    projectCard.on("click", function () {
-                        currentIndex = i;
-                        renderProject(currentIndex);
-
-                        // Scroll to the top of the page
-                        $("html, body").scrollTop(0);
-                    });
-                });
-            }
-
-            // Function to handle next project
-            function nextProject() {
-                if (projects.length === 0) {
-                    console.log("No projects to navigate.");
-                    return;
-                }
-
-                currentIndex = (currentIndex + 1) % projects.length;
-                renderProject(currentIndex);
-
-                // Hide projects wrapper to trigger animation
-                $(".highlight").removeClass("animate-slide-right").addClass("animate-slide-left");
-                $(".highlight").hide(0).show(0);
-            }
-
-            // Function to handle previous project
-            function prevProject() {
-                if (projects.length === 0) {
-                    console.log("No projects to navigate.");
-                    return;
-                }
-
-                currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-                renderProject(currentIndex);
-
-                // Hide projects wrapper to trigger animation
-                $(".highlight").removeClass("animate-slide-left").addClass("animate-slide-right");
-                $(".highlight").hide(0).show(0);
-            }
-
-            // Event listener for next button
-            $(".next-button").on("click", nextProject);
-
-            // Event listener for previous button
-            $(".prev-button").on("click", prevProject);
-
-            // Initial fetch projects with 'all' filter
-            fetchProjects('all');
-
-            // Function to set animation delay
-            function setAnimationDelay() {
-                $(".project-card").each(function (i) {
-                    var initialDelay = 1;
-                    var animationDelay = (initialDelay + i * 0.5) + "s";
-                    $(this).css({
-                        "opacity": 0,
-                        "animation": "slideUp 1.5s ease forwards",
-                        "animation-delay": animationDelay
-                    });
-                });
-            }
-
-            // Function to handle filter selection
-            $(".filters p").on("click", function () {
-                // Remove selected class from all filter buttons
-                $(".filters p").removeClass("selected");
-
-                // Add selected class to the clicked filter button
-                $(this).addClass("selected");
-
-                // Reset currentIndex to 0
-                currentIndex = 0;
-
-                // Get the filter value
-                var filterValue = $(this).data("filter");
-
-                // Fetch projects based on the selected filter
-                fetchProjects(filterValue);
-            });
-        });
-
-
-    </script>
-    <script src="../js/starfield.js"></script>
-    <script src="../js/cursor.js"></script>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span id="y"></span> Tyreik Rogers</p>
+            <p><a href="index.html">Home</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Experience and roles — Tyreik Rogers.">
+    <title>Experience · Tyreik Rogers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="page">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true"></span> Tyreik Rogers</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html" aria-current="page">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="conferences.html">Conferences</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--tight">
+            <div class="container">
+                <p class="section__label reveal">Experience</p>
+                <h1 class="section__title reveal">Where I've focused my time</h1>
+                <p class="section__lead reveal">Replace the samples below with your roles, dates, and outcomes. Recruiters scan for impact metrics and technologies — add both when you can.</p>
+
+                <ul class="timeline reveal">
+                    <li>
+                        <h3>Your role title · Organization</h3>
+                        <p class="meta">Start — End · Location</p>
+                        <p>Bullet-style impact: what you shipped, who it helped, and tools you used (e.g., Python, Git, AWS).</p>
+                        <div class="tags">
+                            <span class="tag">Edit me</span>
+                            <span class="tag">Stack</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Teaching / research / club leadership</h3>
+                        <p class="meta">Season or academic year</p>
+                        <p>Short summary: mentoring, course work, or cross-functional collaboration.</p>
+                        <div class="tags">
+                            <span class="tag">Leadership</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Binghamton University — CS &amp; Mathematics</h3>
+                        <p class="meta">Undergraduate</p>
+                        <p>Core focus: algorithms, systems, and math foundations; applied work through personal projects and coursework.</p>
+                    </li>
+                </ul>
+
+                <p class="reveal" style="margin-top: 2rem;">
+                    <a class="btn btn--primary" href="project.html">Projects</a>
+                    <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span id="y"></span> Tyreik Rogers</p>
+            <p><a href="index.html">Home</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conferences and talks — Tyreik Rogers.">
+    <title>Conferences · Tyreik Rogers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="page">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true"></span> Tyreik Rogers</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="conferences.html" aria-current="page">Conferences</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--tight">
+            <div class="container">
+                <p class="section__label reveal">Conferences</p>
+                <h1 class="section__title reveal">Events &amp; learning</h1>
+                <p class="section__lead reveal">List conferences, workshops, or meetups you've attended (or presented at). Link to slides or programs when possible.</p>
+
+                <ul class="timeline reveal">
+                    <li>
+                        <h3>Conference or event name</h3>
+                        <p class="meta">Year · City (or virtual)</p>
+                        <p>What you took away, or your contribution (poster, volunteer, attendee).</p>
+                    </li>
+                    <li>
+                        <h3>Campus tech talk / hackathon</h3>
+                        <p class="meta">Optional</p>
+                        <p>Smaller events count — they show curiosity and community involvement.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span id="y"></span> Tyreik Rogers</p>
+            <p><a href="index.html">Home</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

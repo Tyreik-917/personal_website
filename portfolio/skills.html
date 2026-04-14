@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Technical skills — Tyreik Rogers.">
+    <title>Skills · Tyreik Rogers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="page">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true"></span> Tyreik Rogers</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html" aria-current="page">Skills</a>
+                <a href="conferences.html">Conferences</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--tight">
+            <div class="container">
+                <p class="section__label reveal">Skills</p>
+                <h1 class="section__title reveal">Tools &amp; topics</h1>
+                <p class="section__lead reveal">Group skills the way you'd explain them in an interview: languages, frameworks, systems, and domain depth (ML, security, etc.).</p>
+
+                <div class="card-grid reveal-stagger">
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">{ }</div>
+                        <h2 class="card__title">Languages</h2>
+                        <p class="card__text">e.g., Python, Java, JavaScript, C/C++, SQL — adjust to your strongest.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">&#9632;</div>
+                        <h2 class="card__title">Software &amp; systems</h2>
+                        <p class="card__text">Git, Linux, APIs, testing, CI basics, cloud (if any).</p>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">REST</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">◎</div>
+                        <h2 class="card__title">ML / AI / security</h2>
+                        <p class="card__text">Libraries, coursework, labs, or competitions — keep it honest and specific.</p>
+                        <div class="tags">
+                            <span class="tag">ML fundamentals</span>
+                            <span class="tag">Cybersecurity interest</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span id="y"></span> Tyreik Rogers</p>
+            <p><a href="index.html">Home</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
