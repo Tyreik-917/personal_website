@@ -457,6 +457,17 @@ img {
   }
 }
 
+/* Conferences page: two cards per row on wide screens */
+#conferences-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  #conferences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -541,12 +552,106 @@ img {
   box-shadow: 0 0 12px var(--gold-glow);
 }
 
+/* Experience: vertical line in the center, cards alternate left / right */
+.timeline.timeline--experience {
+  margin-top: 0.5rem;
+  border-left: none;
+  padding-left: 0;
+}
+
+.timeline.timeline--experience::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--border);
+  z-index: 0;
+}
+
+.timeline.timeline--experience li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: start;
+  padding-left: 0;
+  padding-bottom: 2rem;
+  z-index: 1;
+}
+
+.timeline.timeline--experience li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline.timeline--experience .experience-card {
+  margin: 0;
+  width: min(100%, 520px);
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.timeline.timeline--experience .experience-card .card__title,
+.timeline.timeline--experience .experience-card .meta,
+.timeline.timeline--experience .experience-card p,
+.timeline.timeline--experience .experience-card .card__text,
+.timeline.timeline--experience .experience-card .tag {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.timeline.timeline--experience li:nth-child(odd) .experience-card {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.timeline.timeline--experience li:nth-child(even) .experience-card {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.timeline.timeline--experience li::before {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.25rem;
+  z-index: 2;
+}
+
+@media (max-width: 800px) {
+  .timeline.timeline--experience::before {
+    left: 15px;
+    margin-left: -1px;
+  }
+
+  .timeline.timeline--experience li {
+    grid-template-columns: 1fr;
+    padding-left: 2.25rem;
+  }
+
+  .timeline.timeline--experience li:nth-child(odd) .experience-card,
+  .timeline.timeline--experience li:nth-child(even) .experience-card {
+    grid-column: 1;
+    justify-self: stretch;
+    width: 100%;
+    max-width: none;
+  }
+
+  .timeline.timeline--experience li::before {
+    left: 10px;
+    transform: none;
+  }
+}
+
 .timeline h3 {
   font-size: 1.05rem;
   margin: 0 0 0.25rem;
 }
 
-.timeline .meta {
+.timeline .meta,
+.card .meta {
   font-size: 0.85rem;
   color: var(--gold);
   margin: 0 0 0.5rem;
@@ -765,6 +870,7 @@ img {
 .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.26s; }
 .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.33s; }
 .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.4s; }
+.reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 0.47s; }
 
 .reveal-stagger.is-visible > * {
   opacity: 1;
