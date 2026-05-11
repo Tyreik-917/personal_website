@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All projects — Tyreik Rogers portfolio.">
+    <title>All projects · Tyreik Rogers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="page page--onecol page--ref page--projects-all">
+    <main>
+        <section class="section section--tight section-anchor reveal-group">
+            <div class="container">
+                <p class="projects-all__back reveal">
+                    <a class="projects-all__back-link" href="index.html#projects">← Back to portfolio</a>
+                </p>
+                <header class="showcase-header reveal">
+                    <h1 class="section__title section__title--showcase">All projects</h1>
+                    <p class="section__lead section__lead--center">Full project grid with the same filters as the portfolio showcase.</p>
+                </header>
+
+                <div class="project-filters reveal" role="toolbar" aria-label="Filter projects by category">
+                    <button type="button" class="project-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="project-filter" data-filter="web" aria-pressed="false">Web</button>
+                    <button type="button" class="project-filter" data-filter="cyber" aria-pressed="false">Cybersecurity</button>
+                    <button type="button" class="project-filter" data-filter="ai-ml" aria-pressed="false">AI / ML</button>
+                    <button type="button" class="project-filter" data-filter="fintech" aria-pressed="false">FinTech</button>
+                    <button type="button" class="project-filter" data-filter="other" aria-pressed="false">Other</button>
+                </div>
+
+                <p id="project-empty" class="project-empty" role="status" hidden>No projects in this category yet.</p>
+
+                <div id="project-grid" class="card-grid reveal-stagger">
+                    <article class="card project-card" data-category="web">
+                        <div class="project-card__media">
+                            <img src="../images/projects/portfolio.jpg?v=2" alt="Screenshot preview of the personal portfolio website" width="800" height="475" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Personal portfolio site</h2>
+                            <p class="card__text">Clean one-page portfolio with category filters and accessible navigation — modern UI on a vibrant gradient.</p>
+                            <div class="tags">
+                                <span class="tag">HTML / CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="index.html#home">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=personal-portfolio"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="other">
+                        <div class="project-card__media">
+                            <img src="../images/projects/bmo.jpg" alt="Pixel T-Rex from Chrome's offline dinosaur game" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">BMO Game Boy System</h2>
+                            <p class="card__text">Game Boy system using a Raspberry Pi 5 and RetroPie — custom UI, controls, and save/load from SD.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Raspberry Pi</span>
+                                <span class="tag">RetroPie</span>
+                            </div>
+                            <div class="project-card__actions project-card__actions--solo">
+                                <a class="project-card__details" href="project.html?slug=bmo-game-boy"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="ai-ml">
+                        <div class="project-card__media">
+                            <img src="../images/projects/CLP.jpg" alt="Call Listener Portal project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">CLP (Call Listener Portal)</h2>
+                            <p class="card__text">B2B SaaS for analyzing call and chat transcripts with NeuralSeek AI for actionable insights.</p>
+                            <div class="tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">NeuralSeek</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="https://github.com/wwwwwwwwwwwwwmmmmmm/SBUHacks2025" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=call-listener-portal"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="ai-ml cyber">
+                        <div class="project-card__media">
+                            <img src="../images/projects/Phishing.jpg" alt="Phishing detection project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Phishing Chrome Extension</h2>
+                            <p class="card__text">Chrome extension with ML to flag phishing emails; trained on phishing vs legitimate mail.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="https://github.com/ThePayneBringer/PhishingDetector-StackHacks" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=phishing-chrome-extension"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="fintech">
+                        <div class="project-card__media">
+                            <img src="../images/projects/market_watch.jpg" alt="Market data project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Financial Market Watch System</h2>
+                            <p class="card__text">Distributed market data with Python and RabbitMQ; Docker for reproducible deployment.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">RabbitMQ</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <div class="project-card__actions project-card__actions--solo">
+                                <a class="project-card__details" href="project.html?slug=financial-market-watch"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="fintech">
+                        <div class="project-card__media">
+                            <img src="../images/projects/fundpath.jpg" alt="FundPath project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">FundPath</h2>
+                            <p class="card__text">Streamlines procurement for fundraisers with automated price research and mapping.</p>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="https://github.com/Tyreik-917" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=fundpath"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="ai-ml">
+                        <div class="project-card__media">
+                            <img src="../images/projects/MOM_AI.jpg" alt="M.O.M. AI project" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">M.O.M. AI</h2>
+                            <p class="card__text">Personal AI assistant with scheduling, email triage, and carbon footprint analytics.</p>
+                            <div class="tags">
+                                <span class="tag">React</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="https://devpost.com/software/m-o-m-87m2uy" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=mom-ai"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project-card" data-category="other">
+                        <div class="project-card__media">
+                            <img src="../images/projects/Escape.jpg" alt="Escape room game" width="800" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-card__body">
+                            <h2 class="card__title">Escape Room Game</h2>
+                            <p class="card__text">Four-level puzzle escape room built with Pygame.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pygame</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a class="project-card__live" href="https://github.com/Tyreik-917/Escape_Room" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="project-card__details" href="project.html?slug=escape-room-game"><span class="project-card__details-text">Details</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© <span id="y"></span> Tyreik Rogers</p>
+            <p class="site-footer__links"><a href="index.html#home">Home</a> · <a href="index.html#projects">Portfolio</a> · <a href="index.html#contact">Contact</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

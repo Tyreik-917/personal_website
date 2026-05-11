@@ -1,44 +1,42 @@
 # Tyreik Rogers — Personal Portfolio
 
-Static portfolio site for Tyreik Rogers (Computer Science & Mathematics, Binghamton University). It highlights experience, projects, skills, conferences, certifications, and contact information.
+Single-page portfolio on `portfolio/index.html` (intro, portfolio showcase with projects / certificates / tech, contact link cards). A **welcome loading screen** (progress + “Portfolio Website”) runs on the first load of the portfolio home each browser session, then the intro appears. Project detail pages: `portfolio/project.html?slug=…` with data in `js/project-detail.js`.
 
 ## Stack
 
-- HTML5, CSS (`css/main.css`), vanilla JavaScript (`js/main.js`)
-- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) via Google Fonts
+- HTML5, CSS (`css/main.css`), vanilla JavaScript (`js/main.js`, `js/project-detail.js`)
+- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) and [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
 
 ## Structure
 
 ```
 personal_website/
-├── css/main.css          # Global styles
-├── js/main.js            # Navigation, loader, motion preferences
-├── images/               # Project and site imagery
-└── portfolio/            # Site pages (entry: index.html)
-    ├── index.html
-    ├── about.html
-    ├── experience.html
-    ├── project.html
-    ├── skills.html
-    ├── conferences.html
-    ├── certifications.html
-    ├── contact.html
+├── vercel.json             # Root / → /portfolio/
+├── css/main.css
+├── js/main.js
+├── js/project-detail.js
+├── images/
+│   ├── trogers.jpg
+│   ├── certifications/     # Credential images linked from index
+│   └── projects/           # Project thumbnails
+└── portfolio/
+    ├── index.html          # Primary entry
+    ├── projects.html       # Full project grid + filters
+    ├── project.html        # Project detail shell (slug-driven)
     └── resume.pdf
 ```
 
 ## Local preview
 
-From the repository root, serve the folder so asset paths resolve correctly:
+From the repository root:
 
 ```bash
 cd /path/to/personal_website
 python3 -m http.server 8080
 ```
 
-Then open [http://localhost:8080/portfolio/](http://localhost:8080/portfolio/) in a browser.
-
-Alternatively, any static file server pointed at this directory works the same way.
+Open [http://localhost:8080/portfolio/](http://localhost:8080/portfolio/).
 
 ## Deploy
 
-Upload the repository (or build output) to any static host (GitHub Pages, Netlify, Cloudflare Pages, etc.). Ensure the site root maps to `portfolio/` if you want `/` to show the home page, or configure the host’s document root accordingly.
+Configured for Vercel: `/` redirects to `/portfolio/`. Any static host works; point the site root at `portfolio/` or mirror the redirect behavior.
