@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Certificate details — Tyreik Rogers portfolio.">
+    <title>Certificate · Tyreik Rogers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="page page--onecol page--ref page--project-detail">
+    <div class="project-detail-page">
+        <header class="project-detail__top">
+            <div class="container project-detail__top-inner">
+                <a class="project-detail__back" href="index.html?tab=certificates#projects">
+                    <span class="project-detail__back-icon" aria-hidden="true">←</span>
+                    Back
+                </a>
+            </div>
+        </header>
+
+        <main class="project-detail__main">
+            <div class="container">
+                <article id="certificate-detail-article" class="project-detail" hidden>
+                    <div class="project-detail__grid">
+                        <div class="project-detail__col project-detail__col--copy">
+                            <h1 class="project-detail__title" id="cd-title">Certificate</h1>
+                            <p class="project-detail__issuer" id="cd-meta"></p>
+                            <p class="project-detail__desc" id="cd-desc"></p>
+
+                            <div class="project-detail__stats" aria-label="Certificate overview">
+                                <div class="project-detail__stat-card">
+                                    <div class="project-detail__stat-card__top">
+                                        <span class="project-detail__stat-card__icon" aria-hidden="true">◇</span>
+                                        <span class="project-detail__stat-card__num" id="cd-stat-skills">0</span>
+                                    </div>
+                                    <p class="project-detail__stat-card__label">Skills covered</p>
+                                </div>
+                                <div class="project-detail__stat-card">
+                                    <div class="project-detail__stat-card__top">
+                                        <span class="project-detail__stat-card__icon" aria-hidden="true">★</span>
+                                        <span class="project-detail__stat-card__num" id="cd-stat-highlights">0</span>
+                                    </div>
+                                    <p class="project-detail__stat-card__label">Highlights</p>
+                                </div>
+                            </div>
+
+                            <div class="project-detail__actions" id="cd-actions">
+                                <a class="project-detail__btn project-detail__btn--live" id="cd-credential" href="#" target="_blank" rel="noopener" hidden>
+                                    <svg class="project-detail__btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                        <line x1="16" y1="13" x2="8" y2="13" />
+                                        <line x1="16" y1="17" x2="8" y2="17" />
+                                    </svg>
+                                    View credential
+                                </a>
+                            </div>
+
+                            <section class="project-detail__tech-block" aria-labelledby="cd-skills-heading">
+                                <h2 class="project-detail__tech-heading" id="cd-skills-heading">
+                                    <span class="project-detail__tech-heading-icon" aria-hidden="true">◇</span>
+                                    Skills &amp; focus areas
+                                </h2>
+                                <ul class="project-detail__tech-list" id="cd-skills-list"></ul>
+                            </section>
+                        </div>
+
+                        <div class="project-detail__col project-detail__col--visual">
+                            <figure class="project-detail__figure project-detail__figure--cert">
+                                <img id="cd-image" class="project-detail__image" src="" alt="" width="480" height="360" loading="eager" decoding="async">
+                            </figure>
+                            <section class="project-detail__features-box" aria-labelledby="cd-highlights-heading">
+                                <h2 class="project-detail__features-title" id="cd-highlights-heading">
+                                    <svg class="project-detail__star" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.75" aria-hidden="true">
+                                        <polygon points="12 2 15 9 22 9 17 14 19 22 12 18 5 22 7 14 2 9 9 9 12 2" />
+                                    </svg>
+                                    Program highlights
+                                </h2>
+                                <ul class="project-detail__features-ul" id="cd-highlights"></ul>
+                            </section>
+                        </div>
+                    </div>
+                </article>
+
+                <div id="certificate-detail-not-found" class="project-detail__not-found" hidden>
+                    <p class="project-detail__not-found-text">This certificate could not be found.</p>
+                    <a class="project-detail__not-found-link" href="index.html?tab=certificates#projects">Back to portfolio</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/certificate-detail.js" defer></script>
+</body>
+
+</html>

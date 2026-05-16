@@ -2392,12 +2392,32 @@ body.page--project-detail .project-detail-page {
   box-shadow: 0 0 18px rgba(129, 140, 248, 0.45);
 }
 
+.project-detail__issuer {
+  margin: -0.35rem 0 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  letter-spacing: 0.01em;
+}
+
+.project-detail__issuer:empty {
+  display: none;
+}
+
 .project-detail__desc {
   margin: 0 0 1.5rem;
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-muted);
   max-width: 56ch;
+}
+
+.project-detail__figure--cert {
+  background: #f8fafc;
+}
+
+.project-detail__figure--cert .project-detail__image {
+  object-fit: contain;
 }
 
 .project-detail__stats {

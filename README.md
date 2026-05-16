@@ -15,6 +15,7 @@ personal_website/
 ├── css/main.css
 ├── js/main.js
 ├── js/project-detail.js
+├── js/certificate-detail.js
 ├── images/
 │   ├── trogers.jpg
 │   ├── certifications/     # Credential images linked from index
@@ -23,6 +24,7 @@ personal_website/
     ├── index.html          # Primary entry
     ├── projects.html       # Full project grid + filters
     ├── project.html        # Project detail shell (slug-driven)
+    ├── certificate.html    # Certificate detail shell (slug-driven)
     └── resume.pdf
 ```
 
