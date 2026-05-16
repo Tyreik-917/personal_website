@@ -7,7 +7,6 @@
         "Google Code Next is a multi-year computer science program for teens that blends technical instruction with mentorship and community. Through workshops, projects, and peer collaboration, participants build a foundation in software development while learning how to present work and grow as builders.",
       image: "../images/certifications/codenext.jpg",
       imageAlt: "Code Next certificate of completion — Google",
-      credentialUrl: "../images/certifications/codenext.jpg",
       skills: [
         "Web development",
         "Python",
@@ -29,7 +28,6 @@
         "TeamEdge is a Google program focused on teamwork, leadership, and applied technology skills. Participants work through structured challenges that mirror how real product teams plan, build, and iterate — strengthening communication alongside technical execution.",
       image: "../images/certifications/teamedge.jpg",
       imageAlt: "TeamEdge certificate of completion — Google",
-      credentialUrl: "../images/certifications/teamedge.jpg",
       skills: [
         "Team leadership",
         "Agile workflows",
@@ -51,7 +49,6 @@
         "Tech Flex Leaders (TFL) is an America On Tech program that prepares students for internships and early careers in technology. The virtual format combines technical depth with professional skills — from résumés and interviewing to building portfolio-ready projects.",
       image: "../images/certifications/tfl.jpg",
       imageAlt: "Tech Flex Leaders certificate of completion — America On Tech",
-      credentialUrl: "../images/certifications/tfl.jpg",
       skills: [
         "Full-stack fundamentals",
         "Career readiness",
@@ -107,8 +104,6 @@
     var highlightsEl = document.getElementById("cd-highlights");
     var statSkills = document.getElementById("cd-stat-skills");
     var statHighlights = document.getElementById("cd-stat-highlights");
-    var credentialBtn = document.getElementById("cd-credential");
-
     if (titleEl) titleEl.textContent = data.title;
     if (metaEl) metaEl.textContent = data.meta || "";
     if (descEl) descEl.textContent = data.description;
@@ -139,15 +134,6 @@
       });
     }
 
-    if (credentialBtn) {
-      if (data.credentialUrl) {
-        credentialBtn.href = data.credentialUrl;
-        credentialBtn.hidden = false;
-      } else {
-        credentialBtn.hidden = true;
-        credentialBtn.removeAttribute("href");
-      }
-    }
   }
 
   if (document.readyState === "loading") {
