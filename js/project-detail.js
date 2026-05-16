@@ -109,7 +109,7 @@
       image: "../images/projects/fundpath.jpg",
       imageAlt: "FundPath project",
       liveUrl: null,
-      githubUrl: "https://github.com/Tyreik-917",
+      githubUrl: null,
       technologies: [
         { name: "React", icon: "react/react-original.svg" },
         { name: "TypeScript", icon: "typescript/typescript-original.svg" },
@@ -129,7 +129,7 @@
       image: "../images/projects/MOM_AI.jpg",
       imageAlt: "M.O.M. AI project",
       liveUrl: "https://devpost.com/software/m-o-m-87m2uy",
-      githubUrl: null,
+      githubUrl: "https://github.com/DevionRosa/YHacks2026_Proj2",
       technologies: [
         { name: "React", icon: "react/react-original.svg" },
         { name: "FastAPI", icon: "fastapi/fastapi-original.svg" },
