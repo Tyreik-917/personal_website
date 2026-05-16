@@ -6,8 +6,8 @@
       title: "Personal portfolio site",
       description:
         "A polished one-page portfolio that highlights coursework, projects, and contact in a single scroll experience. Built with semantic HTML, layered CSS, and lightweight JavaScript for reveal animations, showcase tabs, and project filtering — all tuned for readability and accessibility on a vibrant blue–purple gradient.",
-      image: "../images/projects/portfolio.jpg?v=2",
-      imageAlt: "Screenshot preview of the personal portfolio website",
+      image: "../images/projects/portfolio.png?v=3",
+      imageAlt: "Personal portfolio hero: bio, profile photo, and stat highlights on a dark gradient",
       liveUrl: "index.html#home",
       githubUrl: "https://github.com/Tyreik-917/personal_website",
       technologies: [
@@ -48,7 +48,7 @@
         "A B2B-oriented concept for ingesting call and chat transcripts and surfacing structured insight. NeuralSeek-style AI is used to summarize themes, risks, and follow-ups so teams can review conversations faster than reading raw logs end to end.",
       image: "../images/projects/CLP.jpg",
       imageAlt: "Call Listener Portal project",
-      liveUrl: "https://github.com/wwwwwwwwwwwwwmmmmmm/SBUHacks2025",
+      liveUrl: null,
       githubUrl: "https://github.com/wwwwwwwwwwwwwmmmmmm/SBUHacks2025",
       technologies: [
         { name: "TypeScript", icon: "typescript/typescript-original.svg" },
@@ -68,7 +68,7 @@
         "A browser extension that inspects email-like content and flags likely phishing using a trained classifier. A small Flask service and SQLite store support lightweight training workflows and quick iteration on new phishing patterns.",
       image: "../images/projects/Phishing.jpg",
       imageAlt: "Phishing detection project",
-      liveUrl: "https://github.com/ThePayneBringer/PhishingDetector-StackHacks",
+      liveUrl: null,
       githubUrl: "https://github.com/ThePayneBringer/PhishingDetector-StackHacks",
       technologies: [
         { name: "Python", icon: "python/python-original.svg" },
@@ -148,7 +148,7 @@
         "A four-level Pygame escape room with progressive puzzles, inventory-style interactions, and readable level data. Each stage introduces a new mechanic so difficulty ramps without opaque pixel hunting.",
       image: "../images/projects/Escape.jpg",
       imageAlt: "Escape room game",
-      liveUrl: "https://github.com/Tyreik-917/Escape_Room",
+      liveUrl: null,
       githubUrl: "https://github.com/Tyreik-917/Escape_Room",
       technologies: [
         { name: "Python", icon: "python/python-original.svg" },

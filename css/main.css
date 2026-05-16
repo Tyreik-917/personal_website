@@ -2511,6 +2511,10 @@ body.page--project-detail .project-detail-page {
   transition: transform 0.2s var(--ease), box-shadow 0.2s, border-color 0.2s, background 0.2s;
 }
 
+.project-detail__btn[hidden] {
+  display: none !important;
+}
+
 .project-detail__btn-icon {
   flex-shrink: 0;
 }

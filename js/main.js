@@ -323,6 +323,27 @@
       });
     }
 
+    var showcaseViewAllWrap = document.querySelector(".showcase-view-all-wrap");
+    var showcaseViewAllBtn = document.getElementById("showcase-view-all-btn");
+
+    function syncShowcaseViewAll(slug) {
+      if (!showcaseViewAllBtn || !showcaseViewAllWrap) {
+        return;
+      }
+      if (slug === "tech") {
+        showcaseViewAllWrap.hidden = true;
+        return;
+      }
+      showcaseViewAllWrap.hidden = false;
+      if (slug === "certificates") {
+        showcaseViewAllBtn.href = "certificates.html";
+        showcaseViewAllBtn.textContent = "View all certificates";
+        return;
+      }
+      showcaseViewAllBtn.href = "projects.html";
+      showcaseViewAllBtn.textContent = "View all projects";
+    }
+
     function activateShowcaseTab(slug) {
       var panel = panelBySlug[slug];
       if (!panel) {
@@ -348,6 +369,8 @@
           revealShowcasePanel(p);
         }
       });
+
+      syncShowcaseViewAll(slug);
     }
 
     showcaseTabs.forEach(function (tab) {
@@ -377,6 +400,12 @@
     }
 
     showcaseTabFromQuery();
+
+    var initialShowcase =
+      (document.querySelector(".showcase-tab.is-active") &&
+        document.querySelector(".showcase-tab.is-active").getAttribute("data-showcase")) ||
+      "projects";
+    syncShowcaseViewAll(initialShowcase);
   }
 
 })();
